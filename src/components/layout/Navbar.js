@@ -27,7 +27,7 @@ const Navbar = (props) => {
         <nav className="nav">
             <ul className="nav-links">
             <Link to='/todos' className="nav-link"><li>TO DO'S</li></Link> 
-            <Link to='/contas' className="nav-link"><li>ACCOUNT TRACKER</li></Link> 
+            <Link to='/acctracker' className="nav-link"><li>ACCOUNT TRACKER</li></Link> 
             </ul>
         </nav>    
     </div>

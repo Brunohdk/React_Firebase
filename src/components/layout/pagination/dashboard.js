@@ -14,13 +14,11 @@ class dashboard extends Component{
         const {articles} = this.props
         return(
             <div className="container">
-                <div style={{marginTop:'80px'}}>
-                <ProjectList articles={articles}/>
-                </div>
+                <ProjectList articles={articles}/> 
                 <DashRow articles={articles}/>
-                <div style={{marginTop:'80px'}}>
+                {/* <div style={{marginTop:'80px'}}>
                 <RecentPost articles={articles}/>
-                </div>
+                </div> */}
             </div>
         )
     }

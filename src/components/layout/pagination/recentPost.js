@@ -1,6 +1,6 @@
 import React from 'react'
 import Img from '../../assets/testebom.png'
-import './style.css'
+
 
 const recentPost = ({articles}) => {
     return(

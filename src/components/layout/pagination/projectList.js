@@ -9,14 +9,14 @@ const projectList = ({articles}) => {
     const settings = {
         dots: true,
       infinite: true,
-      speed: 350,
+      speed: 415,
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay:true
     }
     return(
-        <div style={{textAlign:'center'}}>
-            <h1>Posts Recentes</h1>
+        <div style={{textAlign:'center',paddingBottom:'1px'}}>
+            <h1 style={{paddingBottom:'10px'}}>Posts Recentes</h1>
         <Slider {...settings}>
             {articles && articles.map(art => {
                 return(
