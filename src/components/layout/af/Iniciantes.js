@@ -170,7 +170,7 @@ const Iniciantes = () => {
                                 <p>{ini.content}</p>
                             </IniCardBody>
                             <IniLinks href={ini.linktest}><IniButton1>Teste o sistema</IniButton1></IniLinks>
-                            <IniLinks href={ini.linktest}><IniButton2>Visite o código</IniButton2></IniLinks>
+                            <IniLinks href={ini.linkcode}><IniButton2>Visite o código</IniButton2></IniLinks>
                         </IniCard>
                     </div>
                 )

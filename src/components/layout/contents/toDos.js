@@ -4,7 +4,6 @@ import { firestoreConnect } from 'react-redux-firebase'
 import { createProject } from '../../../store/actions/projectActions'
 import { compose } from 'redux'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './todos.css'
 import moment from 'moment'
 import firebase from '../../../config/fbConfig'
 

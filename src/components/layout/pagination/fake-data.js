@@ -9,7 +9,8 @@ export default [
         subtitle: 'ReactJS + Firebase',
         desc: 'Lista de a fazeres',
         content: 'Feito para que possamos ter mais agilidade nos nossos a fazeres do dia-a-dia.',
-        linktest: '/todos'
+        linktest: '/todos',
+        linkcode: 'https://github.com/Brunohdk/React_Firebase/blob/master/src/components/layout/af/TutorialToDo.js'
     },
     {
         id:'1',
@@ -18,7 +19,8 @@ export default [
         subtitle: 'ReactJS + Firebase',
         desc: 'Controle de contas',
         content: 'Como um histórico do seu cartão de crédito, porém não restrito ao mesmo.',
-        linktest: '/acctracker'
+        linktest: '/acctracker',
+        linkcode: ''
     },
     {
 

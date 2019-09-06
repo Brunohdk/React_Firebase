@@ -7,15 +7,14 @@ import Todos from './components/layout/contents/toDos'
 import Contas from './components/layout/contents/contas'
 import Dashboard from './components/layout/pagination/dashboard'
 import ProjectDetails from './components/layout/pagination/projectDetails'
-import NewTeste from './components/layout/NewTest'
 import Navbarr from './components/layout/af/Navbar'
-import DeBaixo from './components/layout/af/Debaixo'
-import DeBaixo2 from './components/layout/af/Debaixo2'
 import './index.css'
-import Debaixo2 from './components/layout/af/Debaixo2';
-import Iniciantes from './components/layout/af/Iniciantes';
 import TutorialTodo from './components/layout/af/TutorialToDo'
+import TutorialAccTracker from './components/layout/contents/IniAccTracker'
+import TutorialAccTracker2 from './components/layout/contents/testetracker/App'
 import Site from './components/layout/af/Inicio'
+
+
 
 
 export default class App extends Component{
@@ -25,14 +24,13 @@ export default class App extends Component{
         return(
             
             <BrowserRouter>
-            <Navbarr/>
             <Switch>
                 <Route exact path='/' component={Site}/>
                 <Route path='/article/:id' component={ProjectDetails}/>
                 <Route exact path='/todos' component={TutorialTodo}/>
                 <Route path='/signup' component={SignUp} />
                 <Route path='/signin' component={SignIn} />
-                <Route path='/acctracker' component={Contas} />
+                <Route path='/acctracker' component={TutorialAccTracker2} />
                 <Route path='/test' component={Navbarr}/>
             </Switch>
             </BrowserRouter>
