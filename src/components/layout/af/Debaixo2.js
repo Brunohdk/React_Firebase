@@ -69,6 +69,8 @@ font-size:1.4rem;
 margin-bottom: 4rem !important;
 `
 const Section1Button1 = styled.button`
+cursor: help !important;
+outline: none !important;
 padding:1.4rem 1.6rem;
     font-size: 1.1rem;
     font-weight: 600;
@@ -88,6 +90,8 @@ transition: all 0.3s ease 0s;
 @media(min-width:1200px){padding:1.75rem 3rem;};
 `
 const Section1Button2 = styled.button`
+outline: none !important;
+cursor: help !important;
 padding:1.4rem 1.6rem;
     font-size: 1.1rem;
     font-weight: 600;
@@ -111,6 +115,8 @@ transition: all 0.3s ease 0s;
 @media(min-width:1200px){padding:1.75rem 3rem;};
 `
 const Section1Button3 = styled.button`
+cursor: help !important;
+outline: none !important;
 padding:1.4rem 1.6rem;
     font-size: 1.1rem;
     font-weight: 600;
@@ -158,8 +164,30 @@ const Debaixo2 = () => {
                           ignoreCancelEvents={false}>
                               <Section1Button1>Iniciante</Section1Button1>
                         </Link>
-                        <Section1Button2>Mediano</Section1Button2>
-                        <Section1Button3>Avançado</Section1Button3>
+                        <Link activeClass="active"
+                          to="medianos"
+                          spy={true}
+                          smooth={true}
+                          hashSpy={true}
+                          offset={50}
+                          duration={600}
+                          delay={300}
+                          isDynamic={true}
+                          ignoreCancelEvents={false}>
+                              <Section1Button2>Mediano</Section1Button2>
+                          </Link>
+                          <Link activeClass="active"
+                          to="avancados"
+                          spy={true}
+                          smooth={true}
+                          hashSpy={true}
+                          offset={50}
+                          duration={600}
+                          delay={300}
+                          isDynamic={true}
+                          ignoreCancelEvents={false}>
+                              <Section1Button3>Avançado</Section1Button3>
+                            </Link>
                         </div>
                     </Section1Text>
                 </Section1Row>

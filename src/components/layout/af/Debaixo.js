@@ -112,9 +112,10 @@ margin-bottom: 3rem !important;
 @media (min-width: 992px){font-size: 1.5rem;};
 `
 const HeadButton = styled.button`
+outline: none !important;
 padding: 1.35rem 3rem;
     font-size: 1.6rem;
-    font-weight: 650;
+    font-weight: 600;
     text-transform: uppercase;
     border: none;
     border-radius: 10rem;
@@ -146,7 +147,7 @@ const DeBaixo = () => {
                         <H1Head>Seu Lugar Preferido de Tutoriais Grátis</H1Head>
                         <HrHead/>
                     <ColHead2>
-                        <Head2P>Aprenda passo a passo cada projeto, do básico ao avançado!.</Head2P>
+                        <Head2P>Aprenda passo a passo cada projeto, do básico ao avançado!</Head2P>
                         <Link activeClass="active"
                           to="about"
                           spy={true}

@@ -1,20 +1,17 @@
 import React, {Component} from 'react'
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
-import Navbar from './components/layout/Navbar'
 import SignIn from './components/auth/SignIn'
 import SignUp from './components/auth/SignUp'
-import Todos from './components/layout/contents/toDos'
-import Contas from './components/layout/contents/contas'
-import Dashboard from './components/layout/pagination/dashboard'
+import myTodos from './components/layout/contents/myTrashes/myTodos'
+import myContas from './components/layout/contents/myTrashes/myContas'
 import ProjectDetails from './components/layout/pagination/projectDetails'
-import Navbarr from './components/layout/af/Navbar'
-import './index.css'
-import TutorialTodo from './components/layout/af/TutorialToDo'
-import TutorialAccTracker from './components/layout/contents/IniAccTracker'
-import TutorialAccTracker2 from './components/layout/contents/testetracker/App'
+import TutorialTodo from './components/layout/contents/tutoriaisIniciantes/tutorialTodo/TutorialToDo'
+import TutorialAccTracker from './components/layout/contents/tutoriaisIniciantes/tutorialAccTracker/App'
 import Site from './components/layout/af/Inicio'
-
-
+import TutorialTetris from './components/layout/contents/tutoriaisAvancados/TetrisGame/tetrisApp';
+import TutorialCalculator from './components/layout/contents/tutoriaisIniciantes/tutorialCalculator/tutorialCalculator';
+import TutorialRecipes from './components/layout/contents/tutoriaisMedianos/tutorialRecipes/Recipes';
+import './index.css'
 
 
 export default class App extends Component{
@@ -22,16 +19,19 @@ export default class App extends Component{
     
     render(){
         return(
-            
             <BrowserRouter>
             <Switch>
                 <Route exact path='/' component={Site}/>
                 <Route path='/article/:id' component={ProjectDetails}/>
-                <Route exact path='/todos' component={TutorialTodo}/>
+                <Route path='/todos' component={TutorialTodo}/>
+                <Route path='/acctracker' component={TutorialAccTracker} />
+                <Route path='/tetris' component={TutorialTetris} />
+                <Route path='/calculator' component={TutorialCalculator} />
+                <Route path='/recipes' component={TutorialRecipes} />
                 <Route path='/signup' component={SignUp} />
                 <Route path='/signin' component={SignIn} />
-                <Route path='/acctracker' component={TutorialAccTracker2} />
-                <Route path='/test' component={Navbarr}/>
+                <Route path='/mytodos' component={myTodos}/>
+                <Route path='/mycontas' component={myContas} />
             </Switch>
             </BrowserRouter>
         )

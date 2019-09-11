@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { createContas, updateContas } from '../../../store/actions/contasAction'
+import { createContas, updateContas } from '../../../../store/actions/contasAction'
 import { firestoreConnect } from 'react-redux-firebase'
 import { compose } from 'redux'
-import firebase from '../../../config/fbConfig'
+import firebase from '../../../../config/fbConfig'
 
 
 class Contas extends Component {

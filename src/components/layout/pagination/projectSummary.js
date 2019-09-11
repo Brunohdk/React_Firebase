@@ -1,5 +1,4 @@
 import React from 'react'
-import moment from 'moment'
 import Img from '../../assets/testebom.png'
 
 const ProjectSummary = ({art}) => {

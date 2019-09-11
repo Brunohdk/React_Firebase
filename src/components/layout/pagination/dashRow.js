@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import CardDatas from './fake-data'
-import Button from '@material-ui/core/Button'
+import CardDatas from '../contents/datas/AllDatas'
 
 
 const Card = styled.div`
@@ -29,6 +28,7 @@ const Card = styled.div`
 `;
 
 const Button1 = styled.button`
+outline: none !important;
 color:white;
 font-size:0.78rem;
 font-weight:500;
@@ -78,6 +78,7 @@ p {
 }
 `
 const Button2 = styled.button`
+outline: none !important;
 width:100%;
 color:white;
 font-size:0.78rem;
@@ -192,18 +193,6 @@ padding-left: 15px;
 display: block;
 box-sizing: border-box;
 `
-const Link1 = styled.a`
-  &:hover {
-    color: rgba(255, 255, 255, .4);
-  }
-  &:active{
-    color: rgba(255, 255, 255, .4);
-  }
-  &:focus{
-    background: red;
-}
-`;
-
 
 
 const DescH1 = styled.h2`

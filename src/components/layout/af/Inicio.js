@@ -3,6 +3,8 @@ import Capa from './Debaixo';
 import Capa2 from './Debaixo2';
 import Dash from '../pagination/dashboard'
 import Iniciantes from './Iniciantes';
+import Medianos from './Mediano';
+import Avancados from './Avancados'
 import NavBar from './Navbar'
 
  const Site = () => {
@@ -13,6 +15,8 @@ import NavBar from './Navbar'
             <Capa2/>
             <Dash/>
             <Iniciantes/>
+            <Medianos/>
+            <Avancados />
         </div>
     )
 }

@@ -91,6 +91,14 @@ function Todo({ todo, index, completeTodo, removeTodo }) {
   margin:0 auto;
   padding-bottom:8px;
   `
+    const BackButton = styled.button`
+    padding:10px 20px;
+    background-color:white;
+    border-radius:10px;
+    justify-content:center;
+    margin: 0 auto;
+    display:flex;
+`
 
     return (
       <div className="app">
@@ -112,6 +120,7 @@ function Todo({ todo, index, completeTodo, removeTodo }) {
           ))}
           <TodoForm addTodo={addTodo} />
         </div>
+        <a href="/"><BackButton>Voltar</BackButton></a>
       </div>
     );
   }

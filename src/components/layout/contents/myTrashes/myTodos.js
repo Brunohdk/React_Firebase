@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { firestoreConnect } from 'react-redux-firebase'
-import { createProject } from '../../../store/actions/projectActions'
+import { createProject } from '../../../../store/actions/projectActions'
 import { compose } from 'redux'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import moment from 'moment'
-import firebase from '../../../config/fbConfig'
+import firebase from '../../../../config/fbConfig'
 
 
 
@@ -54,7 +54,6 @@ class Todos extends Component {
                                 value={this.state.content}
                                 placeholder="O que você lembrou de fazer?..."
                                 name="content"
-                                value={this.state.content}
                                 onChange={this.handleChange}
                             />
                         </form>

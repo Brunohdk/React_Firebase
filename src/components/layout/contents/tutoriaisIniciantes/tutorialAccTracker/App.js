@@ -7,7 +7,7 @@ import styled from 'styled-components';
 
 
 const App = () => {
-	// Data
+
 	const usersData = [
 		{id:1, data:'02/01', local:'Supermercado', desc:'Compra do mês', price:645},
         {id:2, data:'03/01', local:'Conta de casa', desc:'Conta de luz', price:189},
@@ -16,12 +16,12 @@ const App = () => {
 
 	const initialFormState = { id: null, local: '', data: '', desc:'', price:'' }
 
-	// Setting state
+
 	const [ users, setUsers ] = useState(usersData)
 	const [ currentUser, setCurrentUser ] = useState(initialFormState)
 	const [ editing, setEditing ] = useState(false)
 
-	// CRUD operations
+	
 	const addUser = user => {
 		user.id = users.length + 1
 		setUsers([ ...users, user ])
@@ -59,7 +59,17 @@ const App = () => {
     margin:0 auto;
     @media(max-width:576px){
         width:21.1rem;
-    }`
+	}`
+	const BackButton = styled.button`
+    padding:10px 20px;
+    background-color:white;
+    border-radius:10px;
+    margin: 0 auto;
+	display:flex;
+	&:hover{
+		outline: none !important;
+	}
+	`
 
 	return (
 		<div className="" style={{backgroundColor:'rgba(218, 223, 225, 1)', height:'100vh'}}>
@@ -86,6 +96,7 @@ const App = () => {
 					<UserTable users={users} editRow={editRow} deleteUser={deleteUser} />
 				</div>
 			</div>
+			<a href="/"><BackButton>Voltar</BackButton></a>
 		</div>
 	)
 }

@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import {signIn} from '../../store/actions/authActions'
-import {Redirect} from 'react-router-dom'
+import {signIn, signOut} from '../../store/actions/authActions'
 import './SignIn.css'
 
 
@@ -24,7 +23,7 @@ class SignIn extends Component{
     }
 
     render(){
-        const {auth,authError} = this.props
+        const {authError, signOut} = this.props
         return(
             <div className="signup">
                 <div className="div-container">
@@ -48,6 +47,7 @@ class SignIn extends Component{
                         </div>
                     </form>
                     </div>
+                    <a href="#" onClick={signOut}>SAIR</a>
             </div>
         )
     }
@@ -62,7 +62,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return{
-        auth: (creds) => dispatch(signIn(creds))
+        auth: (creds) => dispatch(signIn(creds)),
+        signOut: () => dispatch(signOut())
     }
 }
 

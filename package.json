@@ -12,12 +12,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.22",
+    "@fortawesome/free-solid-svg-icons": "^5.10.2",
     "@material-ui/core": "^4.0.0-rc.0",
     "bootstrap": "^4.3.1",
     "firebase": "^6.3.4",
     "font-awesome": "^4.7.0",
     "material-ui": "^1.0.0-beta.47",
     "moment": "^2.24.0",
+    "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^5.1.1",
@@ -31,6 +34,7 @@
     "redux": "^4.0.4",
     "redux-firestore": "^0.8.0",
     "redux-thunk": "^2.3.0",
+    "sass": "^1.23.0-module.beta.1",
     "slick-carousel": "^1.8.1",
     "styled-components": "^4.3.2"
   },
