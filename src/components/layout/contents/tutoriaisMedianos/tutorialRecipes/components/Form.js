@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Form = () => (
-    <form>
-        <input type="text" />
+const Form = ({getRecipe}) => (
+    <form onSubmit={getRecipe}>
+        <input type="text" name="inputRecipes" placeholder="Chicken Salad"/>
         <button>Search</button>
     </form>
 );

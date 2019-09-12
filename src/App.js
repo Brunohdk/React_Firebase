@@ -11,6 +11,7 @@ import Site from './components/layout/af/Inicio'
 import TutorialTetris from './components/layout/contents/tutoriaisAvancados/TetrisGame/tetrisApp';
 import TutorialCalculator from './components/layout/contents/tutoriaisIniciantes/tutorialCalculator/tutorialCalculator';
 import TutorialRecipes from './components/layout/contents/tutoriaisMedianos/tutorialRecipes/Recipes';
+import TutorialRecipeId from './components/layout/contents/tutoriaisMedianos/tutorialRecipes/components/Recipe';
 import './index.css'
 
 
@@ -28,6 +29,7 @@ export default class App extends Component{
                 <Route path='/tetris' component={TutorialTetris} />
                 <Route path='/calculator' component={TutorialCalculator} />
                 <Route path='/recipes' component={TutorialRecipes} />
+                <Route path='/recipe/:id' component={TutorialRecipeId} />
                 <Route path='/signup' component={SignUp} />
                 <Route path='/signin' component={SignIn} />
                 <Route path='/mytodos' component={myTodos}/>

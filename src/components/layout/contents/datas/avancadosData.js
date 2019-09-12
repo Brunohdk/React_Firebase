@@ -9,6 +9,6 @@ export default[
         desc: 'Game Tetris',
         content: 'Game feito em grid e funções',
         linktest: '/tetris',
-        linkcode: ''
+        linkcode: 'https://github.com/Brunohdk/React_Firebase/tree/master/src/components/layout/contents/tutoriaisAvancados/TetrisGame'
     }
 ]

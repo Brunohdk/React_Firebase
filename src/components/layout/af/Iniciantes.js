@@ -79,24 +79,6 @@ const IniCardBody = styled.div`
         @media(min-width:992px){font-size:1rem;};
     }
 `
-const IniCardLi = styled.li`
-justify-content:space-around;
-display: flex;
-margin-top:1rem;
-padding-bottom:0.1rem;
-width:100%;
-background-color: #fff;
-
-button{
-    color:black;
-    font-size:0.45rem;
-    font-weight:530;
-    @media(min-width:576px){font-size:0.51rem;};
-    @media(min-width:768px){font-size:0.565rem; font-weight:540;};
-    @media(min-width:992px){font-size:0.612rem; font-weight:540;};
-    @media(min-width:1200px){font-size:0.8rem;};
-}
-`
 const IniButton1 = styled.button`
 outline: none !important;
 font-size:0.78rem;

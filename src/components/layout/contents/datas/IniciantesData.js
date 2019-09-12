@@ -11,7 +11,7 @@ export default [
         desc: 'Lista de a fazeres',
         content: 'Para que possamos ter mais agilidade nos nossos a fazeres do dia-a-dia.',
         linktest: '/todos',
-        linkcode: 'https://github.com/Brunohdk/React_Firebase/blob/master/src/components/layout/af/TutorialToDo.js'
+        linkcode: 'https://github.com/Brunohdk/React_Firebase/tree/master/src/components/layout/contents/tutoriaisIniciantes/tutorialTodo'
     },
     {
         id:'1',
@@ -21,7 +21,7 @@ export default [
         desc: 'Controle de contas',
         content: 'Como um histórico do seu cartão de crédito, porém não restrito ao mesmo.',
         linktest: '/acctracker',
-        linkcode: 'https://github.com/Brunohdk/React_Firebase/blob/master/src/components/layout/contents/testetracker/App.js'
+        linkcode: 'https://github.com/Brunohdk/React_Firebase/tree/master/src/components/layout/contents/tutoriaisIniciantes/tutorialAccTracker'
     },
     {
         id:'2',
@@ -31,6 +31,6 @@ export default [
         desc: 'Calculadora',
         content: 'Calculadora funcional.',
         linktest: '/calculator',
-        linkcode: ''
+        linkcode: 'https://github.com/Brunohdk/React_Firebase/tree/master/src/components/layout/contents/tutoriaisIniciantes/tutorialCalculator'
     }
 ]

@@ -1,0 +1,14 @@
+@import './formStyles';
+@import './resultRecipes';
+
+@mixin flexCenter(){
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.body{
+    box-sizing:border-box;
+    @include flexCenter; 
+}
