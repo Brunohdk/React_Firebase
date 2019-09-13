@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import IniCards from '../contents/datas/IniciantesData';
+import IniCards from '../contents/datas/medianosData';
 
 
 const Ini = styled.div`

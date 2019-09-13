@@ -12,6 +12,7 @@ import TutorialTetris from './components/layout/contents/tutoriaisAvancados/Tetr
 import TutorialCalculator from './components/layout/contents/tutoriaisIniciantes/tutorialCalculator/tutorialCalculator';
 import TutorialRecipes from './components/layout/contents/tutoriaisMedianos/tutorialRecipes/Recipes';
 import TutorialRecipeId from './components/layout/contents/tutoriaisMedianos/tutorialRecipes/components/Recipe';
+import TutorialWeather from './components/layout/contents/tutoriaisMedianos/tutorialWeatherApp/WeatherApp';
 import './index.css'
 
 
@@ -30,6 +31,7 @@ export default class App extends Component{
                 <Route path='/calculator' component={TutorialCalculator} />
                 <Route path='/recipes' component={TutorialRecipes} />
                 <Route path='/recipe/:id' component={TutorialRecipeId} />
+                <Route path='/weather' component={TutorialWeather} />
                 <Route path='/signup' component={SignUp} />
                 <Route path='/signin' component={SignIn} />
                 <Route path='/mytodos' component={myTodos}/>

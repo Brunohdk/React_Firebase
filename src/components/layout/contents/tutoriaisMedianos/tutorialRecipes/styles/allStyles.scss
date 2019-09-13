@@ -1,5 +1,6 @@
 @import './formStyles';
 @import './resultRecipes';
+@import './recipes';
 
 @mixin flexCenter(){
     display:flex;
@@ -11,4 +12,13 @@
 .body{
     box-sizing:border-box;
     @include flexCenter; 
+
+
+
+
+
+    
+
+
+
 }

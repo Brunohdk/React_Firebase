@@ -2,7 +2,7 @@ import ImgTodo from '../../../assets/cardtodo.png'
 import ImgAccTracker from '../../../assets/cardacctracker.png'
 import ImgCalculator from '../../../assets/cardcalculator.png'
 import ImgTetris from '../../../assets/cardtetris.png';
-
+import ImgRecipes from '../../../assets/cardrecipes.png';
 
 export default [
     {
@@ -44,5 +44,15 @@ export default [
         content: 'Game feito em grid e funções',
         linktest: '/tetris',
         linkcode: 'https://github.com/Brunohdk/React_Firebase/tree/master/src/components/layout/contents/tutoriaisAvancados/TetrisGame'
+    },
+    {
+        id:'4',
+        image: ImgRecipes,
+        title: 'Recipes Search',
+        subtitle: 'ReactJS + SASS + API',
+        desc: 'Página de receitas',
+        content: 'Consultas de receitas culinárias com integração de uma API',
+        linktest: '/recipes',
+        linkcode: 'https://github.com/Brunohdk/React_Firebase/tree/master/src/components/layout/contents/tutoriaisMedianos/tutorialRecipes'
     }
 ]

@@ -14,6 +14,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.22",
     "@fortawesome/free-solid-svg-icons": "^5.10.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "@material-ui/core": "^4.0.0-rc.0",
     "bootstrap": "^4.3.1",
     "firebase": "^6.3.4",
@@ -34,7 +35,6 @@
     "redux": "^4.0.4",
     "redux-firestore": "^0.8.0",
     "redux-thunk": "^2.3.0",
-    "sass": "^1.23.0-module.beta.1",
     "slick-carousel": "^1.8.1",
     "styled-components": "^4.3.2"
   },
@@ -49,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.10.2"
   }
 }
