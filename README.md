@@ -1,5 +1,15 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+this.setState({celsius: setDataWeather.celsius,
+                   city: setDataWeather.city,
+                country: setDataWeather.country,
+            description: setDataWeather.description,
+        icon: setDataWeather.icon,
+    main: setDataWeather.main,
+temp_max: setDataWeather.temp_max,
+temp_min: setDataWeather.temp_min,
+error: setDataWeather.error})
 ## Available Scripts
 
 In the project directory, you can run:

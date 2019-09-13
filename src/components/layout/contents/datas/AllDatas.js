@@ -3,6 +3,7 @@ import ImgAccTracker from '../../../assets/cardacctracker.png'
 import ImgCalculator from '../../../assets/cardcalculator.png'
 import ImgTetris from '../../../assets/cardtetris.png';
 import ImgRecipes from '../../../assets/cardrecipes.png';
+import ImgWeather from '../../../assets/cardWeather.png';
 
 export default [
     {
@@ -53,6 +54,16 @@ export default [
         desc: 'Página de receitas',
         content: 'Consultas de receitas culinárias com integração de uma API',
         linktest: '/recipes',
+        linkcode: 'https://github.com/Brunohdk/React_Firebase/tree/master/src/components/layout/contents/tutoriaisMedianos/tutorialRecipes'
+    },
+    {
+        id:'5',
+        image: ImgWeather,
+        title: 'Weather App',
+        subtitle: 'ReactJS + SASS + API',
+        desc: 'Previsão do tempo',
+        content: 'Consultar previsão do tempo do mundo todo com integração de uma API.',
+        linktest: '/weather',
         linkcode: 'https://github.com/Brunohdk/React_Firebase/tree/master/src/components/layout/contents/tutoriaisMedianos/tutorialRecipes'
     }
 ]
