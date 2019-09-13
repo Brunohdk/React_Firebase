@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import IniCards from '../contents/datas/avancadosData.js';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFlushed } from '@fortawesome/free-solid-svg-icons';
 
 
 const Ini = styled.div`
@@ -14,6 +16,7 @@ const IniDesc = styled.h2`
 font-size:3.5rem;
 line-height:1.2;
 color:white;
+margin-bottom:30px;
 
 @media(min-width:768px){font-size:4rem};
 @media(min-width:992px){font-size:4.5rem};
@@ -137,7 +140,7 @@ const Avancados = () => {
         <Ini className=" container row">
             <div className="col-12" style={{textAlign:'center', flex:'0 0 100%', width:'99%'}}>
                 <IniDesc>
-                <i className="fa fa-apple"></i> Avançados
+                <FontAwesomeIcon icon={faFlushed} style={{color:'#FFFF'}}/> Avançados
                 </IniDesc>
             </div>
             {IniCards.map(ini => {

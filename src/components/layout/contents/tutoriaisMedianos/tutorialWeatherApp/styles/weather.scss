@@ -1,6 +1,6 @@
 .bod{
         height:100vh;
-        background-image: url(../assets/aff1.jpg);
+        background-image: url(../assets/bgWeatherApp.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         display:flex;
@@ -32,6 +32,17 @@
         }
         p{
             margin-top:40px;
+        }
+        a{
+            .WeatherBackButton{
+                margin-top:80px;
+                padding:5px 12px;
+                border:none;
+                border-radius:5px;
+                background-color:#25ABAB;
+                outline:none !important;
+                
+            }
         }
     }
 }}

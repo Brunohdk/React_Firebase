@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import IniCards from '../contents/datas/IniciantesData'
-
+import IniCards from '../contents/datas/IniciantesData';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGrinHearts } from '@fortawesome/free-solid-svg-icons';
 
 const Ini = styled.div`
 justify-content:center;
@@ -14,6 +15,7 @@ const IniDesc = styled.h2`
 font-size:3.5rem;
 line-height:1.2;
 color:white;
+margin-bottom:30px;
 
 @media(min-width:768px){font-size:4rem};
 @media(min-width:992px){font-size:4.5rem};
@@ -136,7 +138,7 @@ const Iniciantes = () => {
         <Ini className=" container row">
             <div className="col-12" style={{textAlign:'center', flex:'0 0 100%', width:'99%'}}>
                 <IniDesc>
-                <i className="fa fa-apple"></i> Iniciantes
+                <FontAwesomeIcon icon={faGrinHearts} style={{color:'#FFFF'}}/> Iniciantes
                 </IniDesc>
             </div>
             {IniCards.map(ini => {

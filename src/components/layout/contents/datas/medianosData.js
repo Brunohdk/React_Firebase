@@ -18,8 +18,8 @@ export default [
         title: 'Weather App',
         subtitle: 'ReactJS + SASS + API',
         desc: 'Previsão do tempo',
-        content: 'Consultar previsão do tempo do mundo todo com integração de uma API.',
+        content: 'Consultar previsão do tempo com integração de uma API.',
         linktest: '/weather',
-        linkcode: 'https://github.com/Brunohdk/React_Firebase/tree/master/src/components/layout/contents/tutoriaisMedianos/tutorialRecipes'
+        linkcode: 'https://github.com/Brunohdk/React_Firebase/tree/master/src/components/layout/contents/tutoriaisMedianos/tutorialWeatherApp'
     }
 ]

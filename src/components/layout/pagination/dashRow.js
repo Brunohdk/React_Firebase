@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import CardDatas from '../contents/datas/AllDatas'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFrog } from '@fortawesome/free-solid-svg-icons';
 
 
 const Card = styled.div`
@@ -240,7 +242,7 @@ const dashRow = () => {
                 <DivInside className="row">
                     <div className="col-12" style={{textAlign:'center', flex:'0 0 100%', width:'99%'}}>
                         <DescH1>
-                        <i className="fa fa-apple"></i> Projetos
+                        <FontAwesomeIcon icon={faFrog}/> Projetos
                         <p>Todos os projetos desta lista estão disponíveis em github.com/brunohdk. Nesta lista contém vários tipos de projetos, desde os criados 100% por mim, até alguns criados em projetos compartilhados, outros acompanhando cursos com modificações, etc..</p>
                         </DescH1>
                     </div>
