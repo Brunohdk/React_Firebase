@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import Form from './components/FormWeather'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCloudShowersHeavy, faSun, faCloudRain, faPooStorm, faSnowflake, faSmog,  faCloud} from '@fortawesome/free-solid-svg-icons'
-import {Link} from 'react-scroll';
 import './styles/weather.css'
 
 const key =  '769bb222a5c7532e8f1b0f29f22eabe2';

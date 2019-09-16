@@ -13,6 +13,8 @@ import TutorialCalculator from './components/layout/contents/tutoriaisIniciantes
 import TutorialRecipes from './components/layout/contents/tutoriaisMedianos/tutorialRecipes/Recipes';
 import TutorialRecipeId from './components/layout/contents/tutoriaisMedianos/tutorialRecipes/components/Recipe';
 import TutorialWeather from './components/layout/contents/tutoriaisMedianos/tutorialWeatherApp/WeatherApp';
+import Testar from './components/layout/contents/myTrashes/aff123/testarhabilidades'
+import Testar2 from './components/layout/contents/myTrashes/aff123/testarhabi2';
 import './index.css'
 
 
@@ -24,6 +26,8 @@ export default class App extends Component{
             <BrowserRouter>
             <Switch>
                 <Route exact path='/' component={Site}/>
+                <Route path ='/aff123' component={Testar} />
+                <Route path='/aff12' component={Testar2} />
                 <Route path='/article/:id' component={ProjectDetails}/>
                 <Route path='/todos' component={TutorialTodo}/>
                 <Route path='/acctracker' component={TutorialAccTracker} />
@@ -41,3 +45,4 @@ export default class App extends Component{
         )
     }
 }
+

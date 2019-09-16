@@ -47,7 +47,7 @@ class SignIn extends Component{
                         </div>
                     </form>
                     </div>
-                    <a href="#" onClick={signOut}>SAIR</a>
+                    <a href="/" onClick={signOut}>SAIR</a>
             </div>
         )
     }

@@ -21,7 +21,7 @@ class Recipe extends Component {
             <div className="container recipebox">
                     <h1>{this.state.activeRecipe.title}</h1>
                 <div className="img_recipe" style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
-                    <img src={this.state.activeRecipe.image_url}/>
+                    <img src={this.state.activeRecipe.image_url} alt={this.state.activeRecipe.image_url}/>
                 </div>
                 <div className="recipe_desc">
                     <p>Publicado por: {this.state.activeRecipe.publisher}</p>

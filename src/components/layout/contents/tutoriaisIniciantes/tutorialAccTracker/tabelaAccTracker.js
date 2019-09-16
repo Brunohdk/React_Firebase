@@ -69,7 +69,7 @@ const UserTable = props => (
                   props.editRow(user)
                 }}
                 className="btn btn-primary">
-                <i className="fa fa-pencil">{console.log(user)}</i>
+                <i className="fa fa-pencil"></i>
               </Button>
               <Button 
                 onClick={() => props.deleteUser(user.id)}
