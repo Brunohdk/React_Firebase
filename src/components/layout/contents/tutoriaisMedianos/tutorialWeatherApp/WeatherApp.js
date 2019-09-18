@@ -59,7 +59,7 @@ getWeather = async e => {
         celsius: this.calcCalsius(resp.main.temp),
         temp_max: this.calcCalsius(resp.main.temp_max),
         temp_min: this.calcCalsius(resp.main.temp_min),
-        description: resp.weather[0].description,
+        description: resp.weather[0].description
     });
     }else{
         this.setState({error: true});
@@ -71,13 +71,13 @@ componentDidMount = () => {
     const setDataWeather = JSON.parse(WeatherData);
     this.setState({celsius: setDataWeather.celsius,
         city: setDataWeather.city,
-     country: setDataWeather.country,
- description: setDataWeather.description,
-icon: setDataWeather.icon,
-main: setDataWeather.main,
-temp_max: setDataWeather.temp_max,
-temp_min: setDataWeather.temp_min,
-error: setDataWeather.error})
+        country: setDataWeather.country,
+        description: setDataWeather.description,
+        icon: setDataWeather.icon,
+        main: setDataWeather.main,
+        temp_max: setDataWeather.temp_max,
+        temp_min: setDataWeather.temp_min,
+        error: setDataWeather.error})
 }
 
 

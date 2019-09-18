@@ -17,9 +17,9 @@ class Recipe extends Component {
 
     render(){
         return(
-            <div className="recipe">
+            <div className="recipe" style={{marginTop:'110px'}}>
             <div className="container recipebox">
-                    <h1>{this.state.activeRecipe.title}</h1>
+                    <h1 style={{marginLeft:'20px'}}>{this.state.activeRecipe.title}</h1>
                 <div className="img_recipe" style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
                     <img src={this.state.activeRecipe.image_url} alt={this.state.activeRecipe.image_url}/>
                 </div>
