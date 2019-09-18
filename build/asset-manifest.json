@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/React_Firebase/static/css/main.9909fec2.chunk.css",
+    "main.js": "/React_Firebase/static/js/main.50040008.chunk.js",
+    "main.js.map": "/React_Firebase/static/js/main.50040008.chunk.js.map",
+    "runtime~main.js": "/React_Firebase/static/js/runtime~main.f2be981a.js",
+    "runtime~main.js.map": "/React_Firebase/static/js/runtime~main.f2be981a.js.map",
+    "static/css/2.aa54b723.chunk.css": "/React_Firebase/static/css/2.aa54b723.chunk.css",
+    "static/js/2.54d2a61e.chunk.js": "/React_Firebase/static/js/2.54d2a61e.chunk.js",
+    "static/js/2.54d2a61e.chunk.js.map": "/React_Firebase/static/js/2.54d2a61e.chunk.js.map",
+    "index.html": "/React_Firebase/index.html",
+    "precache-manifest.9249747a8600f0452d48d02c801c1e73.js": "/React_Firebase/precache-manifest.9249747a8600f0452d48d02c801c1e73.js",
+    "service-worker.js": "/React_Firebase/service-worker.js",
+    "static/css/2.aa54b723.chunk.css.map": "/React_Firebase/static/css/2.aa54b723.chunk.css.map",
+    "static/css/main.9909fec2.chunk.css.map": "/React_Firebase/static/css/main.9909fec2.chunk.css.map",
+    "static/media/Tetriscss.css": "/React_Firebase/static/media/Pixel-LCD-7.e2897552.woff",
+    "static/media/bg-masthead.jpg": "/React_Firebase/static/media/bg-masthead.bde300d6.jpg",
+    "static/media/bg.png": "/React_Firebase/static/media/bg.2810fe6b.png",
+    "static/media/cardWeather.png": "/React_Firebase/static/media/cardWeather.da8cb5a5.png",
+    "static/media/cardacctracker.png": "/React_Firebase/static/media/cardacctracker.5e3692c4.png",
+    "static/media/cardcalculator.png": "/React_Firebase/static/media/cardcalculator.53f45565.png",
+    "static/media/cardrecipes.png": "/React_Firebase/static/media/cardrecipes.656209c1.png",
+    "static/media/cardtetris.png": "/React_Firebase/static/media/cardtetris.a3224e2d.png",
+    "static/media/cardtodo.png": "/React_Firebase/static/media/cardtodo.1a794fb8.png",
+    "static/media/slick-theme.css": "/React_Firebase/static/media/slick.f97e3bbf.svg",
+    "static/media/testebom.png": "/React_Firebase/static/media/testebom.1a794fb8.png"
+  }
+}
