@@ -18,7 +18,7 @@ function CSNavbar(){
             </div>
             <ul className="navbar-cs-text">
                 <li >
-                    <Link to="/cellmarket"><p style={{color:'#ffff'}}>Products</p></Link>
+                    <Link to="/cellmarket"><a>Products</a></Link>
                 </li>
             </ul>
             <div className="navbar-cs-cart">

@@ -71,3 +71,8 @@ export const BackButton = styled.button`
     margin-top:30px;
     border-color: 2px rgba(0, 0, 0, .60);
 `
+
+export const BackA = styled.a`
+&:hover{
+    outline: none !important;
+}`

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Body, CalculatorGrid, Output, PreviousOperand, CurrentOperand, BackButton} from './styledCalculator';
+import {Body, CalculatorGrid, Output, PreviousOperand, CurrentOperand, BackButton, BackA} from './styledCalculator';
 import {Button} from './ButtonCalculator';
 
 
@@ -113,7 +113,7 @@ class Calculator extends Component {
             <Button handleClick={this.updateDecimalValue}>.</Button>
             <Button handleClick={this.updateZeroValue}>0</Button>
             <button onClick={this.result} style={{gridColumn:'span 2'}}>=</button>
-            <a href="/"><BackButton>Voltar</BackButton></a>
+            <BackA href="/"><BackButton>Voltar</BackButton></BackA>
         </CalculatorGrid>
         </Body>
         )

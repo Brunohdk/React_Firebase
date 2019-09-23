@@ -19,13 +19,14 @@ function CSModal(){
                                 <div className="row">
                                     <div className="col-8 mx-auto col-md-6 col-lg-4 text-center text-capitalize"
                                     style={{backgroundColor:'#ffff', padding:'40px 20px'}}>
-                                        <h5>CONFIRM YOUR ITEM</h5>
+                                        <h5 style={{fontWeight:'550', fontSize:'27px'}}>CONFIRM YOUR ITEM</h5>
+                                        <hr style={{border:'1.5px solid #01095E'}}/>
                                         <img src={img} className="img-fluid" alt="Your Product"/>
-                                        <h5>{title}</h5>
-                                        <h5 className="text-muted">Price: R${price}</h5>
-                                        <Link to='/cellmarket'><button
+                                        <h5 style={{fontSize:'22px'}}>{title}</h5>
+                                        <h5 className="text-muted mt-2" style={{fontSize:'20px'}}>Price: R${price}</h5>
+                                        <Link to='/cellmarket'><button className="btn btn-primary" style={{margin:'8px 4px'}}
                                         onClick={() => closeModal()}>Back Store</button></Link>
-                                        <Link to='/cellmarket/cart'><button
+                                        <Link to='/cellmarket/cart'><button className="btn btn-danger"
                                         onClick={() => closeModal()}>Go To Cart</button></Link>
                                     </div>
                                 </div>

@@ -15,7 +15,7 @@ function AppShopping(){
         <CScontext>
             <Navbar/>
             <Switch>
-                < Route exact path='/cellmarket' component={ProductList} />
+                <Route exact path='/cellmarket' component={ProductList} />
                 <Route path='/cellmarket/details' component={Details} />
                 <Route path='/cellmarket/cart' component={Cart} />
                 <Route component={Default} />

@@ -100,6 +100,7 @@
   -webkit-transition: all 0.7s linear;
   transition: all 0.7s linear;
   font-size: 16px;
+  outline: none !important;
 }
 
 .CSCardBody .CSCardCart:hover {
@@ -145,7 +146,7 @@
 }
 
 .aroundCS .CSNavBar {
-  margin-top: -0px;
+  margin: 0px auto;
 }
 
 .aroundCS .CSNavBar .navbar-cs {
@@ -172,6 +173,15 @@
   display: flex;
   padding-right: 50px;
   color: #ffff;
+}
+
+.aroundCS .CSNavBar .navbar-cs .navbar-cs-text li a {
+  outline: none !important;
+  color: #ffff;
+}
+
+.aroundCS .CSNavBar .navbar-cs .navbar-cs-text li a:hover {
+  outline: none !important;
 }
 
 .aroundCS .CSNavBar .navbar-cs .navbar-cs-cart {

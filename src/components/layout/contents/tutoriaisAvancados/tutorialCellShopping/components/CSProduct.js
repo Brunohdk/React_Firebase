@@ -4,9 +4,8 @@ import {ProductConsumer} from '../assets/CScontext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartPlus, faHandHoldingUsd } from '@fortawesome/free-solid-svg-icons';
 
-
 function CSProduct(props){
-    const {id, title, img, price, inCart, company, color} = props.product
+    const {id, title, img, price, inCart, company, color} = props.product;
 
     return(
         <div className="col-9 mx-auto col-md-6 col-lg-3 my-3">

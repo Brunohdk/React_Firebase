@@ -96,7 +96,7 @@ function Todo({ todo, index, completeTodo, removeTodo }) {
     background-color:white;
     border-radius:10px;
     justify-content:center;
-    margin: 0 auto;
+    outline: none;
     display:flex;
 `
 
@@ -120,7 +120,9 @@ function Todo({ todo, index, completeTodo, removeTodo }) {
           ))}
           <TodoForm addTodo={addTodo} />
         </div>
+        <div style={{display:'flex', justifyContent:'center'}}>
         <a href="/"><BackButton>Voltar</BackButton></a>
+        </div>
       </div>
     );
   }

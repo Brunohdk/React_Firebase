@@ -15,7 +15,7 @@ function CSCardTotals({value}) {
                         </button>
                     </Link>
                     <h5>
-                        <span className="text-title">total :</span>
+                        <span className="text-title">total: </span>
                         <strong>R$ {cartTotal}</strong>
                     </h5>
                 </div>

@@ -64,11 +64,7 @@ const App = () => {
     padding:10px 20px;
     background-color:white;
     border-radius:10px;
-    margin: 0 auto;
 	display:flex;
-	&:hover{
-		outline: none !important;
-	}
 	`
 
 	return (
@@ -96,7 +92,9 @@ const App = () => {
 					<UserTable users={users} editRow={editRow} deleteUser={deleteUser} />
 				</div>
 			</div>
+			<div style={{display:'flex', justifyContent:'center'}}>
 			<a href="/"><BackButton>Voltar</BackButton></a>
+			</div>
 		</div>
 	)
 }

@@ -4,6 +4,7 @@ import ImgCalculator from '../../../assets/cardcalculator.png'
 import ImgTetris from '../../../assets/cardtetris.png';
 import ImgRecipes from '../../../assets/cardrecipes.png';
 import ImgWeather from '../../../assets/cardWeather.png';
+import ImgCellMarket from '../../../assets/cardcellmarket.png';
 
 export default [
     {
@@ -65,5 +66,15 @@ export default [
         content: 'Consultar previsão do tempo com integração de uma API.',
         linktest: '/weather',
         linkcode: 'https://github.com/Brunohdk/React_Firebase/tree/master/src/components/layout/contents/tutoriaisMedianos/tutorialWeatherApp'
+    },
+    {
+        id:'6',
+        image: ImgCellMarket,
+        title: 'Mobile Market',
+        subtitle: 'ReactJS + SASS',
+        desc: 'Loja de Smartphones',
+        content: 'Loja virtual de smartphones',
+        linktest: '/cellmarket',
+        linkcode: 'https://github.com/Brunohdk/React_Firebase/tree/master/src/components/layout/contents/tutoriaisAvancados/tutorialCellShopping'
     }
 ]

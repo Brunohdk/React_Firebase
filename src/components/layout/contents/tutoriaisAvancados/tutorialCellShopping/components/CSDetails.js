@@ -16,14 +16,14 @@ function CSDetails(){
                             <img src={img} alt="Product"/>
                         </div>
                         <div className="CSProductDetails">
-                            <p style={{marginTop:'100px'}}>Company: <span>{company}</span></p>
-                            <p style={{margin:'30px 0px'}}>Model: <span>{title}</span></p>
-                            <p>Price: <span>R${price}</span></p>
-                            <div>
+                            <p style={{marginTop:'100px', fontSize:'25px'}}>Company: <span>{company}</span></p>
+                            <p style={{margin:'30px 0px', fontSize:'25px'}}>Model: <span>{title}</span></p>
+                            <p style={{fontSize:'25px'}}>Price: <span>R${price}</span></p>
+                            <div style={{marginTop:'40px'}}>
                                 <Link to='/cellmarket'>
-                                    <button>BACK</button>
+                                    <button className="btn btn-primary mr-2">BACK</button>
                                 </Link>
-                                <button
+                                <button className="btn btn-danger"
                                 disabled={inCart? true : false}
                                 onClick={() => {value.addToCart(id); value.openModal(id);}}
                                 >{inCart? 'inCart' : 'Add To Cart'}</button>
@@ -34,7 +34,7 @@ function CSDetails(){
                              marginBottom:'15px', fontSize:'45px'}}>
                                  More about:
                             </h1>
-                            {info}
+                            <div style={{border:'3px solid #01095E', borderRadius:'4px', padding:'12px'}}>{info}</div>
                         </div>
                     </div>
                 </div>

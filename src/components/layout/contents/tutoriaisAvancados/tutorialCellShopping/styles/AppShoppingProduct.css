@@ -100,6 +100,7 @@
   -webkit-transition: all 0.7s linear;
   transition: all 0.7s linear;
   font-size: 16px;
+  outline: none !important;
 }
 
 .CSCardBody .CSCardCart:hover {

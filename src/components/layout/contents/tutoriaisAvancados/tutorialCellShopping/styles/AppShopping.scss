@@ -7,7 +7,7 @@
     top:0;
     height:60px;
     .CSNavBar{
-        margin-top:-0px;
+        margin:0px auto;
         .navbar-cs{
             display:flex;
             width:100%;
@@ -21,6 +21,15 @@
                 display:flex;
                 padding-right:50px;
                 color:#ffff;
+                li{
+                    a{
+                        outline:none !important;
+                        color:#ffff;
+                        &:hover{
+                            outline:none !important;
+                        }
+                    }
+                }
             }
         
             .navbar-cs-cart{ 
@@ -29,11 +38,6 @@
             }
         }
     }
-
-
-
-
-
 
 
 
