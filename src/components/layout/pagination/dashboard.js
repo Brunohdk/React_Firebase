@@ -13,7 +13,7 @@ class dashboard extends Component{
     render(){
         const {articles} = this.props
         return(
-            <div className="container">
+            <div className="container" id="projects">
                 <ProjectList articles={articles}/> 
                 <DashRow articles={articles}/>
                 {/* <div style={{marginTop:'80px'}}>

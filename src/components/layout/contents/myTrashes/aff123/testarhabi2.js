@@ -1,50 +1,66 @@
 import React, {useState} from 'react';
-
-
-const FormCenter = props => {
-    const initialForm = {id:null, bairro:'', rua:'', num:null}
-    const [end, setEnd] = useState()
-
-    const onSubmit = e => {
-        e.preventDefault()
-        props.add(end)
-        setEnd(initialForm)
-    }
-    const handleChange = e => {
-        const {name, value} = e.target
-        setEnd({...end, [name]:value})
-    }
-
-    return(
-        <form>
-            <input type="text" onChange={handleChange} name="bairro" />
-            <input type="text" onChange={handleChange} name="rua" />
-            <input type="text" onChange={handleChange} name="num" />
-            <button onClick={onSubmit}>SAVE</button>
-        </form>
-    )
-}
-
+import styled from 'styled-components';
 
 function Testar2(){
-    const initialData = [{id:null, bairro:'Centro', rua:'Benedito Calixto', num:125}]
-    const [user, setUser] = useState(initialData)
+    const [user, setUser] = useState([{bairro:'a', rua:'a', num:'a'},
+    {bairro:'b', rua:'b', num:'b'},{bairro:'c', rua:'c', num:'c'}])
+    const [values, setValues] = useState({bairro:'', rua:'', num:''});
+    const [editing, setEditing] = useState(false)
+    const [editor, setEditor] = useState(0)
 
-    const add = end => {
-        setUser([...user, end])
+    const add = address => {
+        if(editing){
+            setEditing(false)
+            return user.splice(editor, 1, address)
+        }
+        setUser([...user, address])
     }
 
+    const del = index => {
+        let newUsers = [...user];
+        newUsers.splice(index, 1);
+        setUser(newUsers);
+    }
+
+
+    const edit = index => {
+        let editUser = [...user];
+        let newEditUser = editUser.splice(index, 1);
+        setValues({bairro: newEditUser[0].bairro, rua: newEditUser[0].rua, num: newEditUser[0].rua})
+        setEditing(true);
+        setEditor(index)
+    }
+
+
+    const onSubmit = e => {
+        e.preventDefault();
+        add(values);
+        setValues({bairro:'', rua:'', num:''})
+    }
+
+    const handleChange = e => {
+        const auxValues = {...values};
+        auxValues[e.target.name] = e.target.value;
+        setValues(auxValues);
+    }
 
     return(
         <div className="container">
-            <FormCenter add={add} />
+            <form>
+            BAIRRO<input type="text" onChange={handleChange} name="bairro" value={values.bairro} />
+            RUA<input type="text" onChange={handleChange} name="rua" value={values.rua}/>
+            NUM<input type="text" onChange={handleChange} name="num" value={values.num} />
+            <button onClick={onSubmit}>SAVE</button>
+        </form>
             <div>
                 {console.log(user)}
-                {user.map(e => (
+                {user.map((e, index) => (
                     <div>
-                        <p>{e.bairro}</p>
-                        <p>{e.rua}</p>
-                        <p>{e.num}</p>
+                        <p>BAIRRO:{e.bairro}   </p>
+                        <p>RUA:{e.rua}   </p>
+                        <p>NUM:{e.num}</p>
+                        <button onClick={() => del(index)}>DEL</button>
+                        <button onClick={() => edit(index)}>ATUALIZAR</button>
                     </div>
                 ))}
             </div>

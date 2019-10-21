@@ -7,65 +7,63 @@ import styled from 'styled-components';
 
 
 const App = () => {
+	const Title = styled.h1`
+	padding-top:25px;
+	display:flex;
+	justify-content:center;
+	@media(max-width:576px){
+		font-size:3.3rem;
+	}`
+	const Hr = styled.hr`
+	width:33rem;
+	border-width:0.2rem;
+	border-color:#ffff;
+	margin:0 auto;
+	@media(max-width:576px){
+		width:21.1rem;
+	}`
+	const BackButton = styled.button`
+	padding:10px 20px;
+	background-color:white;
+	border-radius:10px;
+	display:flex;
+	`
 
+	const initialFormState = { local: '', data: '', desc:'', price:'' }
 	const usersData = [
-		{id:1, data:'02/01', local:'Supermercado', desc:'Compra do mês', price:645},
-        {id:2, data:'03/01', local:'Conta de casa', desc:'Conta de luz', price:189},
-        {id:3, data:'12/02', local:'Sorveteria', desc:'3 potes 1,5l', price:39},
+		{data:'02/01', local:'Supermercado', desc:'Compra do mês', price:645},
+        {data:'03/01', local:'Conta de casa', desc:'Conta de luz', price:189},
+        {data:'12/02', local:'Sorveteria', desc:'3 potes 1,5l', price:39},
 	]
-
-	const initialFormState = { id: null, local: '', data: '', desc:'', price:'' }
-
 
 	const [ users, setUsers ] = useState(usersData)
 	const [ currentUser, setCurrentUser ] = useState(initialFormState)
 	const [ editing, setEditing ] = useState(false)
+	const [indexOfWillBeEdited, setIndexOfWillBeEdited] = useState(0)
 
 	
 	const addUser = user => {
-		user.id = users.length + 1
+		if(editing){
+			setEditing(false)
+			return users.splice(indexOfWillBeEdited, 1, currentUser)
+		}
 		setUsers([ ...users, user ])
 	}
 
-	const deleteUser = id => {
-		setEditing(false)
-
-		setUsers(users.filter(user => user.id !== id))
+	const deleteUser = index => {
+		let newUsers = [...users];
+		newUsers.splice(index, 1);
+		setUsers(newUsers);
 	}
 
-	const updateUser = (id, updatedUser) => {
-		setEditing(false)
-
-		setUsers(users.map(user => (user.id === id ? updatedUser : user)))
+	const editRow = index => {
+		setEditing(true);
+		setIndexOfWillBeEdited(index)
+		let usersClone = [...users];
+		let editItem = usersClone.splice(index, 1);
+		return setCurrentUser({local: editItem[0].local, data: editItem[0].data, desc: editItem[0].desc, price: editItem[0].price })
 	}
-
-	const editRow = user => {
-		setEditing(true)
-
-		setCurrentUser({ id: user.id, local: user.local, data: user.data, desc: user.desc, price: user.price })
-    }
     
-    const Title = styled.h1`
-    padding-top:25px;
-    display:flex;
-    justify-content:center;
-    @media(max-width:576px){
-        font-size:3.3rem;
-    }`
-    const Hr = styled.hr`
-    width:33rem;
-    border-width:0.2rem;
-    border-color:#ffff;
-    margin:0 auto;
-    @media(max-width:576px){
-        width:21.1rem;
-	}`
-	const BackButton = styled.button`
-    padding:10px 20px;
-    background-color:white;
-    border-radius:10px;
-	display:flex;
-	`
 
 	return (
 		<div className="" style={{backgroundColor:'rgba(218, 223, 225, 1)', height:'100vh'}}>
@@ -73,23 +71,12 @@ const App = () => {
             <Hr/>
 			<div className="flex-row container">
 				<div className="flex-large" style={{marginTop:'-25px'}}>
-					{editing ? (
-						<Fragment>
-							<EditUserForm
-								editing={editing}
-								setEditing={setEditing}
-								currentUser={currentUser}
-								updateUser={updateUser}
-							/>
-						</Fragment>
-					) : (
-						<Fragment>
-							<AddUserForm addUser={addUser} />
-						</Fragment>
-					)}
+					<AddUserForm addUser={addUser} currentUser={currentUser}
+					setCurrentUser={setCurrentUser}/>
 				</div>
 				<div className="flex-large">
-					<UserTable users={users} editRow={editRow} deleteUser={deleteUser} />
+					<UserTable users={users} editRow={editRow}
+					 deleteUser={deleteUser} />
 				</div>
 			</div>
 			<div style={{display:'flex', justifyContent:'center'}}>

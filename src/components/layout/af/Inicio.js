@@ -6,17 +6,21 @@ import Iniciantes from './Iniciantes';
 import Medianos from './Mediano';
 import Avancados from './Avancados'
 import NavBar from './Navbar'
+import About from './About';
+import Contact from './Contact'
 
  const Site = () => {
     return(
         <div>
-            <NavBar/>
-            <Capa/>
-            <Capa2/>
-            <Dash/>
-            <Iniciantes/>
-            <Medianos/>
+            <NavBar />
+            <Capa />
+            <Capa2 />
+            <About />
+            <Dash />
+            <Iniciantes />
+            <Medianos />
             <Avancados />
+            <Contact />
         </div>
     )
 }

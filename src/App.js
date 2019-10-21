@@ -16,7 +16,7 @@ import TutorialWeather from './components/layout/contents/tutoriaisMedianos/tuto
 import Testar from './components/layout/contents/myTrashes/aff123/testarhabilidades';
 import Testar2 from './components/layout/contents/myTrashes/aff123/testarhabi2';
 import CellMarket from './components/layout/contents/tutoriaisAvancados/tutorialCellShopping/AppShopping';
-
+import Teste from './store/testar.js'
 import './index.css'
 
 
@@ -43,6 +43,7 @@ export default class App extends Component{
                 <Route path='/signin' component={SignIn} />
                 <Route path='/mytodos' component={myTodos}/>
                 <Route path='/mycontas' component={myContas} />
+                <Route path='/testar' component={Teste} />
             </Switch>
             </BrowserRouter>
         )

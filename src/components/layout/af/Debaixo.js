@@ -149,7 +149,7 @@ const DeBaixo = () => {
                     <ColHead2>
                         <Head2P>Aprenda passo a passo cada projeto, do básico ao avançado!</Head2P>
                         <Link activeClass="active"
-                          to="about"
+                          to="select"
                           spy={true}
                           smooth={true}
                           hashSpy={true}

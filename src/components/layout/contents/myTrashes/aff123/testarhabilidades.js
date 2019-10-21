@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class Testar extends Component{
 
     state={
-        count:[],
+        count:0,
         content:'',
         todos:[]
     }
@@ -32,13 +32,14 @@ class Testar extends Component{
 
     addCount = () => {
         this.setState({
-            count: [...this.state.count, +1]
+            count: this.state.count +1
         })
     }
 
     render(){
         return(
             <div className="container">
+            {console.log(this.state.count)}
                 <form onSubmit={this.submit}>
                     <input type="text" name="content" value={this.state.content} onChange={this.handleChange}/>
                 </form>
@@ -46,7 +47,7 @@ class Testar extends Component{
                     {this.state.todos.map((e, index) => <div>{e}<button onClick={()=>this.del(index)}>DEL</button></div>)}
                 </div>
                 <div className="count">
-                    {this.state.count.map(e=>e).reduce((a,b)=> a+b,0)} <button onClick={this.addCount}>CLIK</button>
+                    {this.state.count} <button onClick={this.addCount}>CLIK</button>
                 </div>
             </div>
         )

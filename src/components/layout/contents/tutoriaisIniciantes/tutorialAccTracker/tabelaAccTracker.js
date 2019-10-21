@@ -57,23 +57,18 @@ const UserTable = props => (
     </thead>
     <tbody>
       {props.users.length > 0 ? ( 
-        props.users.map(user => (
-          <tr key={user.id} style={{backgroundColor:'white', border:'3px solid black'}}>
+        props.users.map((user, index) => (
+          <tr key={user.desc} style={{backgroundColor:'white', border:'3px solid black'}}>
             <Td style={{padding:'5px 5px'}}>{user.data}</Td>
             <Td style={{padding:'5px 15px'}}>{user.local}</Td>
             <Td style={{padding:'5px 15px'}}>{user.desc}</Td>
             <Td style={{padding:'5px 0px'}}>R${user.price}</Td>
             <Td style={{display:'flex'}}>
-              <Button 
-                onClick={() => {
-                  props.editRow(user)
-                }}
-                className="btn btn-primary">
+              <Button onClick={() => props.editRow(index)} className="btn btn-primary">
                 <i className="fa fa-pencil"></i>
               </Button>
               <Button 
-                onClick={() => props.deleteUser(user.id)}
-                className="btn btn-danger">
+                onClick={() => props.deleteUser(index)} className="btn btn-danger">
                 <i className="fa fa-trash"></i>
               </Button>
             </Td>
@@ -81,13 +76,13 @@ const UserTable = props => (
         ))
       ) : (
         <tr>
-          <td colSpan={3}>No users</td>
+          <td style={{padding:'30px', display:'flex', justifyContent:'center', fontSize:'25px'}}>Sem contas! Aí sim!</td>
         </tr>
       )}
     </tbody>
   </table>
   <p style={{marginTop:'20px', display:'flex', justifyContent:'center', fontWeight:'500'}}>
-    Total de {props.users.length} contas e R${props.users.map(u => Number.parseInt(u.price)).reduce((a,b)=> a+b,0)} reais gastos.
+    Total de {props.users.length} contas e R${props.users.map(u => Number(u.price)).reduce((a,b)=> a+b,0)} reais gastos.
   </p>
 </div>  
 )

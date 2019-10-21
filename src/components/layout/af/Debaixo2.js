@@ -142,7 +142,7 @@ transition: all 0.4s ease 0s;
 
 const Debaixo2 = () => {
     return(
-        <Section1 id="about">
+        <Section1 id="select">
             <Section1div >
                 <Section1Row>
                     <Section1Text>

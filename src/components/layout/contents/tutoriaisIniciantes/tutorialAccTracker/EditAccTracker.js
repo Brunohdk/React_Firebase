@@ -13,16 +13,17 @@ const EditUserForm = props => {
 
   const handleInputChange = event => {
     const { name, value } = event.target
-
     setUser({ ...user, [name]: value })
+  }
+
+  const onSubmit = e => {
+    e.preventDefault();
+    props.updateUser(user.id, user)
   }
 
   return (
     <form style={{display:'flex', justifyContent:'center'}}
-      onSubmit={event => {
-        event.preventDefault()
-        props.updateUser(user.id, user)
-      }}>
+      onSubmit={onSubmit}>
     <div style={{display:'inline-block'}}>
     <h2 style={{padding:'10px 0px', fontSize:'30px', fontWeight:'500'}}>Editar</h2>
 		<div style={{display:'flex'}}>
@@ -50,10 +51,7 @@ const EditUserForm = props => {
 			</div>
 		</div>
     <button style={{marginRight:'2px', marginTop:'5px', width:'300px'}} className="btn btn-dark" 
-      onClick={event => {
-      event.preventDefault()
-      props.updateUser(user.id, user)
-    }}>Salvar</button>
+      >Salvar</button>
     <button onClick={() => props.setEditing(false)} className="btn btn-danger" style={{marginTop:'5px', width:'122px'}}>
         Cancelar
       </button>
