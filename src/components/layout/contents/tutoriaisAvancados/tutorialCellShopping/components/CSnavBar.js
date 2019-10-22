@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAtom, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
@@ -18,7 +18,7 @@ function CSNavbar(){
             </div>
             <ul className="navbar-cs-text">
                 <li >
-                    <Link to="/cellmarket"><a>Products</a></Link>
+                    <Link to="/cellmarket">Products</Link>
                 </li>
             </ul>
             <div className="navbar-cs-cart">

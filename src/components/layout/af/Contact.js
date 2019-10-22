@@ -21,8 +21,7 @@ border-radius:3px;
 
 const Contact = () => {
     return(
-        <div style={{backgroundColor:'#c4c4c4', padding:'3.5rem 0'}}>
-
+        <div style={{backgroundColor:'#c4c4c4', padding:'3.5rem 0'}} id="contact">
         <div className="container" style={{backgroundColor:'#e6e6e6', borderRadius:'8px'}}>
             <div className="row">
                 <div className="col-12 text-center my-2">

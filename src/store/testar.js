@@ -39,9 +39,6 @@ function TodoForm({addTodo}) {
         setUser(xablau);
     }
      
-
-    let isTruthy = (x) => x ? "true" : "false";
-
     let carro = {
         marca: 'VW',
         modelo: "FOX",

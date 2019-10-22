@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Title from '../CSTitle';
 import CSCartColumns from './CSCartColumns';
 import CSCartEmpty from './CSCartEmpty';

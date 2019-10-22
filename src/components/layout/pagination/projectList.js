@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import CardDatas from '../contents/datas/AllDatas';
 
 const projectList = ({articles}) => {
     const settings = {
@@ -16,11 +17,11 @@ const projectList = ({articles}) => {
     }
     return(
         <div style={{textAlign:'center',paddingBottom:'1px'}}>
-            <h1 style={{paddingBottom:'10px'}}>Posts Recentes</h1>
+            <h1 style={{paddingBottom:'25px'}}>Posts Recentes</h1>
         <Slider {...settings}>
-            {articles && articles.map(art => {
+            {CardDatas && CardDatas.map(art => {
                 return(
-                    <Link to={'/article/' + art.id} key={art.id}>
+                    <Link to={art.linktest} key={art.id}>
                     <ProjectSummary art={art}/>
                     </Link>
                 )

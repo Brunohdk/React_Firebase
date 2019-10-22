@@ -18,7 +18,7 @@ function CSProduct(props){
                     </div>
                     <div className="img-container CSCardImage p-5">
                         <Link to="/cellmarket/details">
-                            <img src={img} className="CSCardImgTop"/>
+                            <img src={img} alt="" className="CSCardImgTop"/>
                         </Link>
                         <button className="CSCardCart" disabled={inCart? true : false} 
                         onClick={() => {value.addToCart(id); value.openModal(id);}}>

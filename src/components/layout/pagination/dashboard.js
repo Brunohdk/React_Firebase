@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import ProjectList from './projectList'
-import RecentPost from './recentPost'
 import DashRow from './dashRow'
 import { connect } from 'react-redux';
 import {firestoreConnect} from 'react-redux-firebase'

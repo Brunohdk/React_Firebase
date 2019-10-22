@@ -140,7 +140,7 @@ padding: 1.35rem 3rem;
 
 const DeBaixo = () => {
     return(
-        <DivHead>
+        <DivHead id="home">
             <ContainerHead>
                 <RowHead>
                     <ColHead>

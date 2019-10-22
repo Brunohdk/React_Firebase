@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 const AddUserForm = props => {
 	const initialFormState = {local: '', data: '', desc:'', price:'' }
-	const [ user, setUser ] = useState(initialFormState)
 
 	const currentUser = props.currentUser;
 	const addUser = props.addUser;

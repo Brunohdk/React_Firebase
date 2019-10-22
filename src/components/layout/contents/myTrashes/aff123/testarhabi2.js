@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import styled from 'styled-components';
 
 function Testar2(){
     const [user, setUser] = useState([{bairro:'a', rua:'a', num:'a'},

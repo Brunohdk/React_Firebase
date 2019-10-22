@@ -14,14 +14,14 @@ function CScontext(props){
     
     useEffect(() => addTotals(), [cart]);
 
-    const setarUsuario = () => {
+    /* const setarUsuario = () => {
         let tempProductss = [];
         storeProducts.forEach(item => {
             const singleItem = {...item};
             tempProductss = [...tempProductss, singleItem];
         })
         setProducts(() => tempProductss)
-    }
+    } TESTE */
 
     const getItem = id => {
         const product = products.find(item => item.id === id)

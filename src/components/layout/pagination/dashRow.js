@@ -148,64 +148,13 @@ const CardBody = styled.div`
     }
 `
 
-const CardUl = styled.ul`
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    list-style-type: disc;
-    justify-content:center;
-`
-
-const CardLi = styled.li`
-justify-content:space-around;
-display: flex;
-margin-top:1rem;
-padding-bottom:0.1rem;
-width:100%;
-background-color: #fff;
-button{
-    font-weight:530;
-    color:white;
-    font-size:0.78rem;
-        font-weight:600;
-        @media(min-width:768px){font-size:0.74rem;};
-        @media(min-width:992px){font-size:0.95rem;};
-        @media(min-width:1200px){font-size:1.1rem;};
-    &:hover{
-        outline:none;
-    }
-}
-`
-
-const MediasQ = styled.div`
-@media (min-width: 768px){
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-};
-@media (min-width: 576px){
-    flex: 0 0 50%;
-    max-width: 50%;
-};
-flex: 0 0 50%;
-max-width: 50%;    
-position: relative;
-width: 100%;
-padding-right: 15px;
-padding-left: 15px;
-display: block;
-box-sizing: border-box;
-`
-
-
 const DescH1 = styled.h2`
 font-size:3.5rem;
 line-height:1.2;
+margin-bottom:2rem;
 
 @media(min-width:768px){font-size:4rem};
 @media(min-width:992px){font-size:4.5rem};
-    i{
-
-    }
     p{
         margin: 10px 0px;
         font-size:1rem;
@@ -235,10 +184,7 @@ color:white;
 const dashRow = () => {
 
     return(
-    <div className="row">
-        <div style={{flex:'0 0 100%', width:'99%', marginTop:'4.5rem', boxSizing:'border-box'}}>
-            <hr></hr>
-        </div>
+    <div className="row" style={{marginTop:'5rem'}}>
                 <DivInside className="row">
                     <div className="col-12" style={{textAlign:'center', flex:'0 0 100%', width:'99%'}}>
                         <DescH1>

@@ -1,4 +1,4 @@
-const initState = {
+/* const initState = {
     contas:[]
 }
 
@@ -19,4 +19,4 @@ const contasReducer = (state = initState, action) => {
         default:
             return state
         }
-}
+} */

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
+import {Link as LinkReplace} from 'react-scroll';
 
 const Navigation = styled.header`
   position:fixed;
@@ -10,7 +11,7 @@ const Navigation = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 0px 100px 0;
-  height: 70px;
+  height: 60px;
   background-color: transparent;
   -webkit-box-shadow: none;
     box-shadow: none;
@@ -40,12 +41,10 @@ const Navigation = styled.header`
 
     
     .logo a {
-        padding-top: 33px;
         @page{min-width: 992px !important;}
         display: flex;
         flex-direction: column;
         clear: both;
-        padding-bottom: 30px;
         text-decoration: none;
         
         p {
@@ -124,55 +123,52 @@ const Navigation = styled.header`
 
   @media only screen and (max-width: 992px) {
     height: auto;
-    min-height: 50px;
     display: block;
     position: relative;
     width:100%;
+    background: black !important;
+    
     .logo {
-      display: block;
-      margin: 0px;
-      margin-left: -30px;
-      a {
-        padding: 20px 0px;
-        p{
-            color:black;
-            width:100%;
-        }
+      display:flex;
+      height:60px;
+      .logoA{
+        margin-top:18px;
       }
     }
     .fa-bars {
       display: inline-block;
       position: absolute;
-      top: 21px;
+      top: 18px;
       right: 55px;
       cursor: pointer;
     }
-    ul.collapsed {
-      width: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      margin-left:-30px;
-
-      overflow: hidden;
-      max-height: 0;
-      -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-      transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-
-      &.is-expanded {
+    .nav{
+      ul.collapsed {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-left:-30px;
         overflow: hidden;
-        max-height: 400px; /* approximate max height */
-        transition-timing-function: ease-in;
-      }
-      li {
-        padding: 15px 0px;
-        margin: 0px 0px;
-        width:auto;
-        color:black;
+        max-height: 0;
+        -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+        transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  
+        &.is-expanded {
+          overflow: hidden;
+          max-height: 400px; /* approximate max height */
+          transition-timing-function: ease-in;
+        }
+        li {
+          padding: 15px 0px;
+          margin: 0px 0px;
+          width:auto;
+          color:#FFFF !important;
+        }
       }
     }
-  }
+    }
 `;
 
 class Nav extends Component {
@@ -182,8 +178,6 @@ class Nav extends Component {
       isExpanded: false,
       slide: 0,  // How much should the Navbar slide up or down
     lastScrollY: 0,
-    backgroundColor: 'transparent',
-    color: 'spacegrey',
     borderBottom: 'none'  // Keep track of current position in state
     };
   }
@@ -210,7 +204,7 @@ class Nav extends Component {
 
 
     if (currentScrollY > lastScrollY) {
-      this.setState({ slide: '-70px', backgroundColor:'white', color:'black', borderBottom:'5px solid black' });
+      this.setState({ slide: '-70px', backgroundColor:'black', color:'black', borderBottom:'5px solid black' });
     } else {
       this.setState({ slide: '0px' });
     }
@@ -228,26 +222,59 @@ class Nav extends Component {
         backgroundColor: `${this.state.backgroundColor}`
       }}>
         <div className="logo">
+          <div className="logoA">
           <Link to="/">
-            <p style={{color:`${this.state.color}`}}>Na Prática!</p>
+            <p style={{color:'#FFFF'}}>Na Prática!</p>
           </Link>
+          </div>
         </div>
         <nav className="nav">
-          <i
+          <i style={{color:'#FFFF'}}
             className="fa fa-bars"
             aria-hidden="true"
             onClick={e => this.handleToggle(e)}
           />
           <ul className={`collapsed ${isExpanded ? "is-expanded" : ""}`}>
-            <NavLink activeClassName="active" to="/">
-              <li style={{color:`${this.state.color}`, borderBottom:`${this.state.borderBottom}`}}>home</li>
-            </NavLink>
-            <NavLink activeClassName="active" to="/about">
-              <li style={{color:`${this.state.color}`, borderBottom:`${this.state.borderBottom}`}}>about</li>
-            </NavLink>
-            <NavLink activeClassName="active" to="/contact">
-              <li style={{color:`${this.state.color}`, borderBottom:`${this.state.borderBottom}`}}>contact</li>
-            </NavLink>
+          <LinkReplace activeClass="active"
+                          to="home"
+                          spy={true}
+                          smooth={true}
+                          hashSpy={false}
+                          offset={50}
+                          duration={600}
+                          delay={300}
+                          isDynamic={true}
+                          ignoreCancelEvents={false}>
+              <li 
+              style={{color:'#FFFF', borderBottom:`${this.state.borderBottom}`, cursor:'pointer'}}>home</li>
+            </LinkReplace>
+            <LinkReplace activeClass="active"
+                          to="aboutMe"
+                          spy={true}
+                          smooth={true}
+                          hashSpy={false}
+                          offset={50}
+                          duration={600}
+                          delay={300}
+                          isDynamic={true}
+                          ignoreCancelEvents={false}>
+              <li style={{color:'#FFFF', borderBottom:`${this.state.borderBottom}`, cursor:'pointer'}}>
+              about
+              </li>
+              </LinkReplace>
+              <LinkReplace activeClass="active"
+                          to="contact"
+                          spy={true}
+                          smooth={true}
+                          hashSpy={false}
+                          offset={50}
+                          duration={600}
+                          delay={300}
+                          isDynamic={true}
+                          ignoreCancelEvents={false}>
+              <li style={{color:'#FFFF', borderBottom:`${this.state.borderBottom}`, cursor:'pointer'}}>
+              contact</li>
+              </LinkReplace>
           </ul>
         </nav>
       </Navigation>
