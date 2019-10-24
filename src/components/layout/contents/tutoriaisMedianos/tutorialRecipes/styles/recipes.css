@@ -1,0 +1,46 @@
+.recipe {
+  background-color: #EDEDED;
+}
+
+.recipe .recipebox {
+  background-color: #E0E0E0;
+  padding: 30px 0px;
+}
+
+.recipe .recipebox h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 12px;
+  font-size: 50px;
+}
+
+.recipe .recipebox .recipe_desc p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 0px;
+}
+
+.recipe .recipebox .recipe_desc button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border: 1px solid black;
+}
+
+.recipe .recipebox .recipe_desc button a {
+  color: white;
+  outline: none !important;
+}
+/*# sourceMappingURL=recipes.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAA;EACZ,UAAU,EAAC,MAAM;EACjB,OAAO,EAAC,IAAI;EACZ,SAAS,EAAC,IAAI;EACd,eAAe,EAAC,YAAY;CAO/B;;AAXD,AAKI,gBALY,CAKZ,iBAAiB,CAAA;EACb,WAAW,EAAC,KAAK;CACpB;;AAPL,AAQI,gBARY,CAQZ,oBAAoB,CAAA;EAChB,MAAM,EAAE,SAAS;CACpB",
+    "sources": [
+        "AppShoppingProductDetail.scss"
+    ],
+    "names": [],
+    "file": "AppShoppingProductDetail.css"
+}

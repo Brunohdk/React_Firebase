@@ -1,0 +1,90 @@
+
+.CSCardBody{
+    transition: all 0.7s linear;
+    border: transparent;
+         &:hover{
+              box-shadow: 8px 8px #01095E;
+        }
+
+        .CSCardHeader{
+            border-bottom:1.5px solid black;
+            font-weight:600;
+            background-color:transparent;
+            font-size:26px;
+            letter-spacing:1.5px;
+        }
+        .CSCARDFOOTER{
+            background-color:#676769;
+            display:flex;
+            transition: all 1s linear;
+            .CSCardTitle{
+                color: white;
+                margin-right:auto;
+                font-weight:450;
+                font-size:24px;
+            }
+            .CSCardTcolor{
+                margin-top:7px;
+                margin-left:auto;
+                font-size:13px;
+                font-weight:500;
+                letter-spacing: 0.5px;
+            }
+        }
+        .CSCARDFOOTER2{
+            display:flex;
+            justify-content:center;
+            background-color:#01095E;
+            padding:7.5px 0px;
+            border-radius:0px 0px 4px 4px;
+            outline: none !important;
+            text-decoration: none;
+            .CSCardPrice{
+                color:white;
+                letter-spacing: 0.7px;
+                font-weight:450;
+                font-size:23px;
+                &:hover {
+                    text-shadow:none;
+                }
+            }
+            
+        }
+        .CSCardImage{
+            position:relative;
+            overflow:hidden;
+            &:hover .CSCardImgTop{
+                transform: scale(1.2);
+            }
+        }
+        .CSCardImgTop{
+            transition: all 0.7s linear;
+        }
+        .CSCardImage:hover .CSCardCart{
+            transform: translate(0,0);
+        }
+        .CSCardCart{
+            position:absolute;
+            bottom:0;
+            right:0;
+            padding: 0.3rem 0.4rem;
+            background-color: #01095E;
+            border:none;
+            color:white;
+            border-radius:5px 0 0 0;
+            transform:translate(100%, 100%);
+            transition: all 0.7s linear;
+            font-size:16px;
+            outline:none !important;
+            &:hover{
+                background-color:#4284FF;
+                cursor:pointer; 
+            }
+        }
+        .card-header{
+            display:flex;
+            p{ 
+                margin:0 auto;
+            }
+        }
+}

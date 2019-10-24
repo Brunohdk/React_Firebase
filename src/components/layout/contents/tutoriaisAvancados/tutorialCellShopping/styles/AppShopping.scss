@@ -1,0 +1,44 @@
+@import './AppShoppingProduct';
+@import './AppShoppingProductDetail';
+
+.aroundCS{
+    width:100%;
+    background-color:#01095E;
+    top:0;
+    height:60px;
+    .CSNavBar{
+        margin:0px auto;
+        .navbar-cs{
+            display:flex;
+            width:100%;
+            padding:8px 0px;
+            margin: auto;
+            .navbar-cs-icon{
+                flex:1;
+            }
+            .navbar-cs-text{
+                align-items:center;
+                display:flex;
+                padding-right:50px;
+                color:#ffff;
+                li{
+                    a{
+                        outline:none !important;
+                        color:#ffff;
+                        &:hover{
+                            outline:none !important;
+                        }
+                    }
+                }
+            }
+        
+            .navbar-cs-cart{ 
+                align-items:center;
+                display:flex;
+            }
+        }
+    }
+
+
+
+}

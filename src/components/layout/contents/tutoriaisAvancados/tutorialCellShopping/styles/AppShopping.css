@@ -1,0 +1,195 @@
+.CSCardBody {
+  -webkit-transition: all 0.7s linear;
+  transition: all 0.7s linear;
+  border: transparent;
+}
+
+.CSCardBody:hover {
+  -webkit-box-shadow: 8px 8px #01095E;
+          box-shadow: 8px 8px #01095E;
+}
+
+.CSCardBody .CSCardHeader {
+  border-bottom: 1.5px solid black;
+  font-weight: 600;
+  background-color: transparent;
+  font-size: 26px;
+  letter-spacing: 1.5px;
+}
+
+.CSCardBody .CSCARDFOOTER {
+  background-color: #676769;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+.CSCardBody .CSCARDFOOTER .CSCardTitle {
+  color: white;
+  margin-right: auto;
+  font-weight: 450;
+  font-size: 24px;
+}
+
+.CSCardBody .CSCARDFOOTER .CSCardTcolor {
+  margin-top: 7px;
+  margin-left: auto;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.CSCardBody .CSCARDFOOTER2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #01095E;
+  padding: 7.5px 0px;
+  border-radius: 0px 0px 4px 4px;
+  outline: none !important;
+  text-decoration: none;
+}
+
+.CSCardBody .CSCARDFOOTER2 .CSCardPrice {
+  color: white;
+  letter-spacing: 0.7px;
+  font-weight: 450;
+  font-size: 23px;
+}
+
+.CSCardBody .CSCARDFOOTER2 .CSCardPrice:hover {
+  text-shadow: none;
+}
+
+.CSCardBody .CSCardImage {
+  position: relative;
+  overflow: hidden;
+}
+
+.CSCardBody .CSCardImage:hover .CSCardImgTop {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.CSCardBody .CSCardImgTop {
+  -webkit-transition: all 0.7s linear;
+  transition: all 0.7s linear;
+}
+
+.CSCardBody .CSCardImage:hover .CSCardCart {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.CSCardBody .CSCardCart {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.3rem 0.4rem;
+  background-color: #01095E;
+  border: none;
+  color: white;
+  border-radius: 5px 0 0 0;
+  -webkit-transform: translate(100%, 100%);
+          transform: translate(100%, 100%);
+  -webkit-transition: all 0.7s linear;
+  transition: all 0.7s linear;
+  font-size: 16px;
+  outline: none !important;
+}
+
+.CSCardBody .CSCardCart:hover {
+  background-color: #4284FF;
+  cursor: pointer;
+}
+
+.CSCardBody .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.CSCardBody .card-header p {
+  margin: 0 auto;
+}
+
+.CSProductDetail {
+  margin-top: '80px';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.CSProductDetail .CSProductDetails {
+  margin-left: -30px;
+}
+
+.CSProductDetail .CSProductDetailInfo {
+  margin: 30px 20px;
+}
+
+.aroundCS {
+  width: 100%;
+  background-color: #01095E;
+  top: 0;
+  height: 60px;
+}
+
+.aroundCS .CSNavBar {
+  margin: 0px auto;
+}
+
+.aroundCS .CSNavBar .navbar-cs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 8px 0px;
+  margin: auto;
+}
+
+.aroundCS .CSNavBar .navbar-cs .navbar-cs-icon {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.aroundCS .CSNavBar .navbar-cs .navbar-cs-text {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 50px;
+  color: #ffff;
+}
+
+.aroundCS .CSNavBar .navbar-cs .navbar-cs-text li a {
+  outline: none !important;
+  color: #ffff;
+}
+
+.aroundCS .CSNavBar .navbar-cs .navbar-cs-text li a:hover {
+  outline: none !important;
+}
+
+.aroundCS .CSNavBar .navbar-cs .navbar-cs-cart {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=AppShopping.css.map */
